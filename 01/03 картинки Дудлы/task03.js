@@ -1,0 +1,42 @@
+//задания на уровень
+taskName = "";
+const pauseAfterTask = 30; //sec пауза после уровня на подумать
+const tasks = [
+ 	task1 = {task:``,
+			secTask:30,
+			sizeTask: `9rem`,
+			sizeFormatAnswer:"9rem",
+			pict:"./images/01.jpg",
+			// audio:"./images/01.mp3",
+			secAnswer:10,
+			answer:"Роршах",
+			},
+ 	task2 = {task:``,
+			// secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"./images/02.jpg",
+			// audio:"./music/02.mp3",
+//			secAnswer:,
+			answer:"Цой",
+			}
+			,
+ 	task3 = {task:``,
+//			secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"./images/03.jpg",
+			// audio:"./music/03.mp3",
+//			secAnswer:,
+			answer:"Шарль Перро, Гримм",
+			},
+ 	task4 = {task:``,
+//			secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"./images/04.jpg",
+			// audio:"./music/04.mp3",
+//			secAnswer:,
+			answer:"Гоголь",
+			}
+]			

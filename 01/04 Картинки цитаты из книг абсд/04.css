@@ -1,0 +1,7 @@
+.headerMainTask img{
+    left:0;
+   transform: translateX(0);
+   width: 150px;
+   height: auto;
+
+}

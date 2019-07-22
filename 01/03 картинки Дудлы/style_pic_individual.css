@@ -1,0 +1,63 @@
+/*стартовое окно с правилами*/
+
+body{overflow-y: hidden; }
+
+      #rulesTotallWindow, #finalTotalWindow {
+        background: black;
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        display: block;
+
+      }
+      #finalTotalWindow {visibility: hidden;}
+
+      #rulesWindow,#finalWindow {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        border: 3px solid brown;
+        border-radius: 10px;
+        /*color: #0000cc;*/
+        color: red;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2em;
+        background:white;
+        color:black;
+/*        padding-bottom:0;
+*/        min-width: 800px;
+
+
+      }
+
+      .timerTable {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: -12vh;
+  right: 0%;
+  color:  white;
+  text-shadow: 3px 3px 2px black;
+
+}
+
+
+.parrent {
+  position: fixed;
+  width: 100%;
+  height: 90vh;
+  top: 10vh;
+  left: 0;
+  border-radius: 0;
+
+  /*border: 4px yellow dotted;*/
+}
+
+
+header {background: red;}

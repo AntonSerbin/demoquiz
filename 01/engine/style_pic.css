@@ -1,0 +1,179 @@
+*{margin: 0; padding: 0;
+font-family: 'helvetica neue', sans-serif;
+/*background: lightgrey;*/
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MonotypeCorsiva; 
+    src: url(MonotypeCorsiva.ttf); 
+   }
+
+img {
+  border-radius: 15px;
+}
+body{background: black;
+overflow-y: auto}
+
+header {
+  width: 100%;
+  height:50vh;
+  background: red;
+  
+}
+
+header img {
+  position: absolute;
+  margin:auto;
+  height: 80px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 5;
+
+}
+.headerMainTask {
+  height: 30vh;
+}
+.headerMainTask img{
+    left:0;
+   transform: translateX(0);
+   width: 250px;
+   height: auto;
+
+}
+
+#headerLogo:hover{
+filter: invert(100%);
+cursor: pointer;
+}
+
+
+/*стартовое окно с правилами*/
+      #rulesTotallWindow, #finalTotalWindow {
+        background: black;
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        display: block;
+      }
+      #finalTotalWindow {visibility: hidden;}
+
+      #rulesWindow,#finalWindow {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        border: 3px solid brown;
+        border-radius: 10px;
+        /*color: #0000cc;*/
+        color: red;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+        background:white;
+        color:black;
+/*        padding-bottom:0;
+*/        min-width: 800px;
+
+      }
+      .buttonMenuRules,.buttonMenuAnswers {
+        display: inline-block;
+        border: 1px solid black;
+        color: red;
+        padding: 3px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1em;
+        cursor:pointer;
+        margin:0.3em auto; 
+        background:red;
+        color:white;
+      }
+      .buttonMenuRules:hover, .buttonMenuAnswers:hover {background: darkred;}
+
+      #buttonAnswersHiden{display:none;}
+/*окончание стартовое окно*/
+
+
+
+.parrent {
+  min-width: 1000px;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  /*background: black; */
+  left: 0;
+  display: block;
+  /*border-radius: 5%;*/
+  /*border: 4px yellow dotted;*/
+}
+
+.timerTable {
+  position: absolute;
+  width: auto;
+  height: auto;
+  /*border: 1px green dotted;*/
+  top: -1vh;
+  right: 0%;
+  /*transf-rm: translate(-50%, -50%);*/
+  font-size: 4em;
+  font-weight: 900;
+  color:  white;
+  background: transparent ;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+.menuControl {
+  position: absolute;
+  width: 230px;
+  height: 55px;
+  /*border: 1px blue dotted;*/
+  bottom: 10px;
+  right:0px;
+  font-weight: 900;
+  color: red;
+  background: transparent ;
+  display: inline-block;
+}
+
+.menuControl img {width: 50px;
+height:50px;
+display:block;
+margin:0 10px 0 10px;}
+
+.menuControl div{
+  display: inline-block;
+  background: transparent ;
+  cursor:pointer;
+  background: inherit;
+}
+
+.numberOfTask{
+  position: absolute;
+  width: auto;
+  height: auto;
+  left:00%; bottom: 0px;
+  /*transform: translate(-50%, -0%);*/
+  text-align: left;
+  /*border:1px green dotted;*/
+  padding-bottom:0;
+
+
+}
+
+.numberOfTask p{
+  font-weight: 900;
+  font-size: 2.5rem;
+  color:red;
+      text-shadow: 2px 2px 3px #000000;
+
+}
+
+
+

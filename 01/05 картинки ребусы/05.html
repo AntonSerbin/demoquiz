@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02</title>
+  <link rel="stylesheet" href="..\engine\style_pic.css">
+    <link rel="stylesheet" href="..\engine\style_pic_individual.css">
+
+</head>
+<body>
+
+  <header>
+    <img id = "headerLogo" src="../engine/logo_are_you_ready.png" height="100px" alt="logo">
+  </header>
+
+  <!-- Вылетающее окно с правилами и клавишей старт -->
+  <div id="rulesTotallWindow"> 
+      <div id="rulesWindow">
+         <h2>Правила уровня.</h2>
+         <br>
+          <p>В данном задании будут картинки с загаданными устойсчивыми выражениями. Обязательно обращайте внимение на формат ответа на каждом задании.<br>
+          Всего будет 15 заданий. На каждое задание будет дано 30 секунд.<br>
+        При согласии сторон уровень может быть проигран еще раз.<br>
+        Формат ответа: Два или три слова на русском языке.<br>
+      <br>
+      Что б начать уровень нажмите СТАРТ.<br>
+      </p>
+        <button id="#buttonCloseRules" class="buttonMenuRules"> СТАРТ </button>
+        <button id="buttonAnswersHidden" class="buttonMenuAnswers"> ОТВЕТЫ </button>
+        <br>
+        <button class="buttonMenuRules" onclick="window.location.href='../index.html'">Вернуться в главное меню</button>
+        </div>
+    </div>
+    <!-- Окончание окна с правилами и клавишей старт -->
+<!-- Начало окна с уровнями -->
+<div class="parrent">
+  <div class="numberOfTask">
+    <p id="numberOfTaskP">Номер уровня: <span id="currentNumberTaskField"></span></p>
+  </div>
+  <div class="timerTable">00:00
+  </div>
+  <div class="menuControl">
+    <div id="buttonBackTask"><img src="..\engine\last.png" alt=""></div>
+    <div id="buttonPause"><img id="buttonPauseImage" src="..\engine\pause-button.png" alt=""></div>
+    <div id="buttonForwardTask"><img src="..\engine\next..png" alt=""></div>
+  </div>
+</div>
+<!-- Окончание окна с уровнями -->
+
+<!-- Окно с последний уровень с кнопками выхода в меню-->
+  <div id="finalTotalWindow"> 
+      <div id="finalWindow">
+       <h2 id="textFinalWindow">Соберите бланки с ответами и передайте их на проверку</h2>
+       <button id="buttonAnswers" class="buttonMenuAnswers"> ОТВЕТЫ </button>
+      <br>
+      <button class="buttonMenuAnswers" onclick="window.location.href='../index.html'">Вернуться в главное меню</button>
+       </div>
+    </div>
+    <!-- Окончание окна с правилами и клавишей старт -->
+
+<script src="task05.js"></script>
+<script src="../engine/main_pict.js"></script>
+
+</body>
+</html>
+
+

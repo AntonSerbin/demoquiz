@@ -1,0 +1,42 @@
+//задания на уровень
+let taskName = "quiz06";
+const pauseAfterTask = 30; //sec пауза после уровня на подумать
+const tasks = [
+ 	task1 = {task:``,
+			secTask:30 ,
+			sizeTask: `9rem`,
+			sizeFormatAnswer:"9rem",
+			pict:"",
+			audio:"./music/01.mp3",
+			secAnswer:10,
+			answer:"Алеша Попович и тугарин Змей",
+			pict:""},
+ 	task2 = {task:``,
+			// secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"",
+			audio:"./music/02.mp3",
+//			secAnswer:,
+			answer:"Мадагаскар",
+			pict:""}
+			,
+ 	task3 = {task:``,
+//			secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"",
+			audio:"./music/03.mp3",
+//			secAnswer:,
+			answer:"Гадкий Я",
+			pict:""},
+ 	task10 = {task:``,
+			// secTask:,
+			sizeTask: ``,
+			sizeFormatAnswer:"",
+			pict:"",
+			audio:"./music/10.mp3",
+//			secAnswer:,
+			answer:"Бобик в гостях у Барбоса",
+			pict:""}
+]			

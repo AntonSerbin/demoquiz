@@ -1,0 +1,187 @@
+*{margin: 0; padding: 0;
+font-family: 'helvetica neue', sans-serif;
+box-sizing:border-box;	
+background: black; 
+/*overflow-y: hidden; */
+}
+@font-face {
+    font-family: MonotypeCorsiva; 
+    src: url(MonotypeCorsiva.ttf); 
+}
+
+:root{
+--sizeList:200px}
+
+
+#icoRules{
+	animation-name: rulesAnimation;
+ 	animation-duration: 4s;
+ 	position: relative;
+
+}
+#icoRules:hover{ transform:scale(0.98);
+	border:2px solid black;
+	border-radius: 17px;
+	}
+
+@keyframes rulesAnimation {
+  0%   {right: 0px; top:0px;}
+  15%  {top:15px;}
+  40%  {right: 25px; top:0px;}
+  100% {right:0px; top:0px;}
+}	
+
+main {
+	width: 100%;
+      }
+
+header {
+	width: 100%;
+	height:20vh;
+	margin-bottom: 2em;
+	position: fixed;
+	background: red;
+	display: inline-flex;
+	justify-content:space-between;
+	top:0;
+	z-index: 20;
+
+}
+
+header div {
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    line-height: 0.15;
+    background: red;
+}
+header p {
+display: block;
+font-size: 3em;
+color: white;
+line-height: 100%;
+background: red;
+font-family:'MonotypeCorsiva','Apple Chancery','ITC Zapf Chancery';
+user-select: none;
+}
+header a {
+	height: 100%;	
+	background: red;
+		}
+header img {
+	height: 100%; width: auto;
+}
+
+img {
+	border-radius: 15px;
+}
+
+.listOfTasks img{
+	width: var(--sizeList);
+	height: var(--sizeList);
+}
+
+.backTextList p{
+	text-align: center;
+	color:red;
+	padding-top: 40px;
+	font-size: 1.8em;
+	font-weight: 900;
+	font-family:'MonotypeCorsiva';
+	height: 80%;
+}
+
+.listOfTasks{
+	width: 60%;
+	margin: 22vh auto 0 auto;
+}
+
+.listOfTasks ul { 
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));  
+    grid-column-gap: 2em;
+  	grid-row-gap:1em	
+}
+	
+.listOfTasks li {
+	list-style-type: none; 
+	position: relative;
+	perspective: 1000;
+	width: var(--sizeList);
+	height: var(--sizeList);
+}
+
+.listOfTasks a {text-decoration: none;
+}
+
+.listOfTasks a:visited {color: black;
+}
+
+.flip-container {
+ perspective: 1000;
+}
+ /* переверните сторону при проведении мышью */
+ .flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+ }
+
+.flip-container, .front, .back {
+ width: var(--sizeList);
+ height: var(--sizeList);
+}
+
+/* здесь находится скорость перевертывания */
+.flipper {
+ transition: 0.7s;
+ transform-style: preserve-3d;
+ position: relative;
+}
+
+/* скройте обратную сторону во время переворота */
+.front, .back {
+ backface-visibility: hidden;
+ position: absolute;
+ top: 0;
+ left: 0;
+ user-select: none;
+}
+
+.backTextList {
+	height: var(--sizeList);
+	
+}
+
+/* лицевая сторона размещена над обратной */
+.front {
+ z-index: 2;
+}
+
+/* обратная, изначально скрытая сторона */
+.back {
+ transform: rotateY(180deg);
+ }
+
+ #updown {
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+      bottom: 30px;
+
+
+}
+
+#updown.up {
+  background: url(up.png);
+  /*border:red 12px dotted;*/
+      background-size: contain;
+
+}
+
+#updown.down {
+  background: url(down.png);
+    background-size: contain;
+
+}

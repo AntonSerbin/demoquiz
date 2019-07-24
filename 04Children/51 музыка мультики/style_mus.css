@@ -1,0 +1,151 @@
+*{margin: 0; padding: 0;
+font-family: 'helvetica neue', sans-serif;
+/*background: lightgrey;*/
+box-sizing: border-box;
+}
+/*стартовое окно с правилами*/
+      #rulesTotallWindow, #finalTotalWindow {
+        /*background: rgba(102, 102, 102, 0.4);*/
+        background: black;
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        display: block;
+/*        border:2px dotted green;
+*/      }
+      #finalTotalWindow {display: none;}
+
+      #rulesWindow,#finalWindow {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        border: 4px solid brown;
+        border-radius: 10px;
+        /*color: #0000cc;*/
+        color: red;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        font-size: 1.5em;
+        background:white;
+        color:black;
+/*        padding-bottom:0;
+*/        min-width: 800px;
+
+      }
+      .buttonMenuRules,.buttonMenuAnswers {
+        display: inline-block;
+        border: 1px solid black;
+        color: red;
+        padding: 3px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 1em;
+        cursor:pointer;
+        margin:0.3em auto; 
+        background:red;
+        color:white;
+
+
+      }
+      .buttonMenuRules:hover, .buttonMenuAnswers:hover {background: darkred;}
+
+      #buttonAnswersHiden{display:none;}
+/*окончание стартовое окно*/
+
+
+.parrent {
+  min-width: 1000px;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background: white; 
+  top: 30%;
+  left: 0;
+  display: block;
+  /*border: 4px yellow dotted;*/
+}
+
+.timerTable {
+  position: absolute;
+  width: auto;
+  height: auto;
+  /*border: 1px green dotted;*/
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  font-weight: 900;
+  color: red;
+  background: transparent ;
+
+}
+
+.menuControl {
+  position: absolute;
+  width: 230px;
+  height: 55px;
+  /*border: 1px blue dotted;*/
+  bottom: 10px;
+  right:0px;
+  font-weight: 900;
+  color: red;
+  background: transparent ;
+  display: inline-block;
+}
+
+.menuControl img {width: 50px;
+height:50px;
+display:block;
+margin:0 10px 0 10px;}
+
+.menuControl div{
+  display: inline-block;
+  background: transparent ;
+  cursor:pointer;
+  background: inherit;
+}
+
+.numberOfTask{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  left: 50%; top:60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /*border:1px green dotted;*/
+
+}
+
+.numberOfTask p{
+  font-weight: 900;
+  font-size: 3em;
+  color:black;
+}
+
+header {
+  width: 100%;
+  height:50vh;
+  background: red;
+
+
+}
+
+header img {
+  display: block;
+  margin:0 auto;
+  height: 30%;
+/*  margin:auto;*/ 
+
+}
+
+img {
+  border-radius: 15px;
+}

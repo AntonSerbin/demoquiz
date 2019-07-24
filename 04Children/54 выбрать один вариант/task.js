@@ -1,0 +1,1 @@
+var _0x580a=["","\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x30\x31\x2E\x6A\x70\x67","\x33","\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x30\x32\x2E\x6A\x70\x67","\x31"];let taskName=_0x580a[0];const pauseAfterTask=30;const tasks=[task1= {task:_0x580a[0],secTask:30,pict:_0x580a[1],secAnswer:10,answer:_0x580a[2]},task2= {task:_0x580a[0],pict:_0x580a[3],answer:_0x580a[4]}]
